@@ -15,9 +15,15 @@ log=`cd "$common_bin/../log" >/dev/null; pwd`
 #--replicas 则指定了为Redis Cluster中的每个Master节点配备几个Slave节点  
 #节点角色由顺序决定,先master之后是slave(为方便辨认,slave的端口比master大1000)
 command="/usr/lib/redis/redis-3.0.1/src/redis-trib.rb create --replicas 1"
-ports="7001 7002 7003 7004 8001 8002 8003 8004"
-ip1="192.168.1.101 192.168.1.102 192.168.1.103 192.168.1.104"
-ip2="192.168.1.104 192.168.1.101 192.168.1.102 192.168.1.103"
+#ports="7001 7002 7003 7004 8001 8002 8003 8004"
+#ip1="192.168.1.101 192.168.1.102 192.168.1.103 192.168.1.104"
+#ip2="192.168.1.104 192.168.1.101 192.168.1.102 192.168.1.103"
+
+#master
+ip1=$1
+#slave
+ip2=$2
+ports=$3
 
 declare -a port_array
 declare -a ip_array
