@@ -9,3 +9,5 @@ $ ./bin/build-conf.sh port_list
 $ ./running-script-on-remote-machines.sh hostname script port_list
 ###构建集群：
 $ ./bin create-cluster.sh master slave port
+###交流
+[http://gshiwen.com/](http://gshiwen.com/)
