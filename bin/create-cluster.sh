@@ -1,14 +1,9 @@
 #!/bin/bash
 
-# NewLand Software:http://www.nlsoft.com.cn
 # CreateDate: 2015-05-28
 # ModificationDate:2015-05-28
 # Author:gongice
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-
-########
-#COMMON#
-########
 
 this="${BASH_SOURCE-$0}"
 common_bin=$(cd -P -- "$(dirname -- "$this")" && pwd -P)
