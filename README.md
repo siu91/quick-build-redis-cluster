@@ -1,4 +1,3 @@
-# quick-build-redis-cluster
 # Redis 集群快速搭建 #
 *2016/01/30 星期六 15:50:43*
 
@@ -21,17 +20,18 @@
 - 解压redis安装包、`make install`最后出现下面信息，编译成功。
 
 	    make[1]: Leaving directory `/usr/lib/redis/redis-3.0.1/src'
-- 将编译好的文件分发到各物理机
+- 将编译好的文件分发到各物理机  
+
 ## 构建集群 ##
-***相关脚本和参考配置：***[https://github.com/gongice/quick-build-redis-cluster.git](https://github.com/gongice/quick-build-redis-cluster.git "quick-build-redis-cluster.git")
-### 生成配置文件 ###
-	    $ ./bin/build-conf.sh port_list
-### 初始化节点 ###
-	    $ ./bin/build-conf.sh port_list
-### 远程主机上生成配置文件和初始化节点 ###
-	    $ ./running-script-on-remote-machines.sh hostname script port_list
-### 构建集群 ###
-	    $ ./bin create-cluster.sh master slave port
-### 交流 ###
+***相关脚本和参考配置：***[https://github.com/gongice/quick-build-redis-cluster.git](https://github.com/gongice/quick-build-redis-cluster.git "quick-build-redis-cluster.git")  
+### 生成配置文件 ###  
+	    $ ./bin/build-conf.sh port_list  
+### 初始化节点 ###  
+	    $ ./bin/build-conf.sh port_list  
+### 远程主机上生成配置文件和初始化节点 ###  
+	    $ ./running-script-on-remote-machines.sh hostname script port_list  
+### 构建集群 ###  
+	    $ ./bin create-cluster.sh master slave port  
+### 交流 ###  
 [http://gshiwen.com/blog/](http://gshiwen.com/blog)
 
